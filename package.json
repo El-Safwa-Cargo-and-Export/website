@@ -16,7 +16,9 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "deploy:gh": "gh-pages -d build --repo https://x-access-token:${GITHUB_TOKEN}@github.com/El-Safwa-Cargo-and-Export/website.git",
-        "lint": "eslint 'src/**/*.{js,ts,tsx}'"
+        "lint": "eslint 'src/**/*.{js,ts,tsx}'",
+        "format": "prettier --write 'src/**/*.{js,ts,tsx}'",
+        "format:check": "prettier --check 'src/**/*.{js,ts,tsx}'"
     },
     "dependencies": {
         "gh-pages": "^6.2.0",
