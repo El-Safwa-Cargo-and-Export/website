@@ -1,3 +1,4 @@
+import React from 'react';
 
 function Testimonials() {
   return (
@@ -10,7 +11,10 @@ function Testimonials() {
       </section>
       <section>
         <h2>Case Studies</h2>
-        <p>Explore our case studies showcasing our expertise in solving complex logistics challenges.</p>
+        <p>
+          Explore our case studies showcasing our expertise in solving complex
+          logistics challenges.
+        </p>
         {/* Case studies content would go here */}
       </section>
     </div>

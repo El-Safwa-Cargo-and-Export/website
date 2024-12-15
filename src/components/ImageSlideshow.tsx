@@ -22,19 +22,18 @@ const Slide = styled.div`
   }
 `;
 
-const images = [
-  'image1.jpg',
-  'image2.jpg',
-  'image3.jpg'
-];
+const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
 
 interface ImageSlideshowState {
   currentIndex: number;
 }
 
-class ImageSlideshow extends React.Component<{}, ImageSlideshowState> {
+class ImageSlideshow extends React.Component<
+  Record<string, never>,
+  ImageSlideshowState
+> {
   state: ImageSlideshowState = {
-    currentIndex: 0
+    currentIndex: 0,
   };
 
   interval: NodeJS.Timeout | undefined;
@@ -48,8 +47,8 @@ class ImageSlideshow extends React.Component<{}, ImageSlideshowState> {
   }
 
   nextSlide = () => {
-    this.setState(prevState => ({
-      currentIndex: (prevState.currentIndex + 1) % images.length
+    this.setState((prevState) => ({
+      currentIndex: (prevState.currentIndex + 1) % images.length,
     }));
   };
 

@@ -1,3 +1,4 @@
+import React from 'react';
 
 function About() {
   return (
@@ -6,7 +7,10 @@ function About() {
       <section>
         <h2>Our Story</h2>
         <p>
-          El Safwa Cargo and Export has been a leader in the logistics industry, dedicated to providing unmatched services to our clients. Our mission is to revolutionize cargo transportation with a focus on speed, safety, and sustainability.
+          El Safwa Cargo and Export has been a leader in the logistics industry,
+          dedicated to providing unmatched services to our clients. Our mission
+          is to revolutionize cargo transportation with a focus on speed,
+          safety, and sustainability.
         </p>
       </section>
       <section>
@@ -20,7 +24,10 @@ function About() {
       </section>
       <section>
         <h2>Global Network</h2>
-        <p>We have extensive global connections and partnerships to ensure your cargo reaches its destination efficiently.</p>
+        <p>
+          We have extensive global connections and partnerships to ensure your
+          cargo reaches its destination efficiently.
+        </p>
       </section>
     </div>
   );

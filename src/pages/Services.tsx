@@ -1,3 +1,4 @@
+import React from 'react';
 
 function Services() {
   return (
@@ -30,7 +31,10 @@ function Services() {
       </section>
       <section>
         <h2>Warehousing and Distribution</h2>
-        <p>Secure storage and efficient distribution services tailored to your needs.</p>
+        <p>
+          Secure storage and efficient distribution services tailored to your
+          needs.
+        </p>
         <ul>
           <li>Short and long-term storage.</li>
           <li>Inventory management.</li>

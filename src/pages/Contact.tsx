@@ -50,8 +50,8 @@ const ErrorMessage = styled.p`
 `;
 
 function Contact() {
-  const emailUser = "ashraf";
-  const emailDomain = "elsafwacargo.com";
+  const emailUser = 'ashraf';
+  const emailDomain = 'elsafwacargo.com';
   const [captcha, setCaptcha] = useState('');
   const [captchaInput, setCaptchaInput] = useState('');
   const [captchaError, setCaptchaError] = useState('');
@@ -87,13 +87,26 @@ function Contact() {
       <h1>Contact Us</h1>
       <section>
         <h2>Office Locations</h2>
-        <p>Address: ALEXANDRIA NOZHA INTERNATIONAL AIRPORT, AGENTS COMPOUND BESI
-        ALEXANDRIA EG
-        Egypt
+        <p>
+          Address: ALEXANDRIA NOZHA INTERNATIONAL AIRPORT, AGENTS COMPOUND BESI
+          ALEXANDRIA EG Egypt
         </p>
-        <p>Phone: <a href="tel:+2034242810">+20 3 4242810</a> (Landline)</p>
-        <p>Phone: <a href="tel:+201223173850">‭+20 122 3173850‬</a> (Cell)</p>
-        <p>IATA: <a href="https://www.iata.org/en/publications/directories/cargolink/directory/el-safwa-cargo-and-export/8723/" target="_blank" rel="noopener noreferrer">El Safwa Cargo and Export</a></p>
+        <p>
+          Phone: <a href="tel:+2034242810">+20 3 4242810</a> (Landline)
+        </p>
+        <p>
+          Phone: <a href="tel:+201223173850">‭+20 122 3173850‬</a> (Cell)
+        </p>
+        <p>
+          IATA:{' '}
+          <a
+            href="https://www.iata.org/en/publications/directories/cargolink/directory/el-safwa-cargo-and-export/8723/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            El Safwa Cargo and Export
+          </a>
+        </p>
       </section>
       <section>
         <h2>Get in Touch</h2>
@@ -112,8 +125,16 @@ function Contact() {
           </Label>
           <Label>
             CAPTCHA:
-            <CaptchaImage src={`https://dummyimage.com/100x40/000/fff&text=${captcha}`} alt="CAPTCHA" />
-            <Input type="text" value={captchaInput} onChange={(e) => setCaptchaInput(e.target.value)} required />
+            <CaptchaImage
+              src={`https://dummyimage.com/100x40/000/fff&text=${captcha}`}
+              alt="CAPTCHA"
+            />
+            <Input
+              type="text"
+              value={captchaInput}
+              onChange={(e) => setCaptchaInput(e.target.value)}
+              required
+            />
           </Label>
           {captchaError && <ErrorMessage>{captchaError}</ErrorMessage>}
           <Button type="submit">Submit</Button>

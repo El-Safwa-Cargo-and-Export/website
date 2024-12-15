@@ -1,3 +1,4 @@
+import React from 'react';
 
 function Careers() {
   return (
@@ -5,7 +6,10 @@ function Careers() {
       <h1>Careers</h1>
       <section>
         <h2>Join Our Team</h2>
-        <p>Explore job openings and career growth opportunities at El Safwa Cargo and Export.</p>
+        <p>
+          Explore job openings and career growth opportunities at El Safwa Cargo
+          and Export.
+        </p>
         {/* Job listings would go here */}
       </section>
       <section>

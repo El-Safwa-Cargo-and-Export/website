@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
@@ -13,7 +14,8 @@ const FooterContainer = styled.footer`
 function Footer() {
   return (
     <FooterContainer>
-      &copy; {new Date().getFullYear()} El Safwa Cargo and Export. All rights reserved.
+      &copy; {new Date().getFullYear()} El Safwa Cargo and Export. All rights
+      reserved.
     </FooterContainer>
   );
 }

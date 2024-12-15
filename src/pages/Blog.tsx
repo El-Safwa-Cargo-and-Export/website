@@ -1,3 +1,4 @@
+import React from 'react';
 
 function Blog() {
   return (
@@ -5,7 +6,10 @@ function Blog() {
       <h1>Blog</h1>
       <section>
         <h2>Latest Articles</h2>
-        <p>Stay updated with the latest trends in logistics and international trade.</p>
+        <p>
+          Stay updated with the latest trends in logistics and international
+          trade.
+        </p>
         {/* Blog articles would go here */}
       </section>
       <section>
