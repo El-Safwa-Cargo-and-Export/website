@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "El Safwa Cargo and Export website",
     "main": "index.tsx",
-    "homepage": "https://El-Safwa-Cargo-and-Export.github.io/website",
+    "homepage": "https://elsafwacargo.com",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
