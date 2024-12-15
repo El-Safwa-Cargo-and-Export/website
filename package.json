@@ -36,7 +36,7 @@
         "@types/react-dom": "^19.0.2",
         "@types/react-router-dom": "^5.3.3",
         "@types/styled-components": "^5.1.0",
-        "eslint": "^9.16.0",
+        "eslint": "^9.17.0",
         "eslint-plugin-react": "^7.26.0"
     },
     "browserslist": {
