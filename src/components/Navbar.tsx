@@ -22,7 +22,7 @@ const NavLink = styled(Link)`
   }
 `;
 
-const LogoContainer = styled.div`
+const LogoContainer = styled(NavLink)`
   display: flex;
   align-items: center;
 `;
@@ -35,7 +35,7 @@ const Logo = styled.img`
 function Navbar() {
   return (
     <Nav>
-      <LogoContainer>
+      <LogoContainer to="/">
         <Logo src="/logo.png" alt="El Safwa Cargo Logo" />
         El Safwa Cargo
       </LogoContainer>
