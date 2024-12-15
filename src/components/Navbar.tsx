@@ -48,7 +48,7 @@ function Navbar() {
         {/* <NavLink to="/track">Track Your Shipment</NavLink> */}
         {/* <NavLink to="/testimonials">Testimonials</NavLink> */}
         {/* <NavLink to="/blog">Blog</NavLink> */}
-        <NavLink to="/careers">Careers</NavLink>
+        {/* <NavLink to="/careers">Careers</NavLink> */}
       </div>
     </Nav>
   );
