@@ -4,6 +4,10 @@
     "description": "El Safwa Cargo and Export website",
     "main": "index.tsx",
     "homepage": "https://elsafwacargo.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/El-Safwa-Cargo-and-Export/website.git"
+    },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
