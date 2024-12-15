@@ -59,6 +59,7 @@ class ImageSlideshow extends React.Component<{}, ImageSlideshowState> {
         {images.map((image, index) => (
           <Slide
             key={index}
+            data-testid={`slide-${index}`}
             className={index === this.state.currentIndex ? 'active' : ''}
             style={{ backgroundImage: `url(${image})` }}
           />
