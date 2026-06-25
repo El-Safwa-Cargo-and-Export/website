@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "industries": "Industries",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "hero_subtitle": "Global Logistics Excellence",
+    "hero_title": "We Deliver <1>Beyond</1> Expectations",
+    "hero_desc": "El Safwa Cargo and Export provides reliable, efficient, and innovative logistics solutions worldwide. Seamless freight forwarding ensuring your goods reach their destination safely and on time.",
+    "quote_btn": "Request a Quote",
+    "feat1_title": "Air & Sea Freight",
+    "feat1_desc": "Comprehensive international logistics combining the speed of air with the scale of sea transport for optimal delivery.",
+    "feat2_title": "Global Network",
+    "feat2_desc": "Extensive reach across continents backed by deep local expertise to navigate complex international regulations.",
+    "feat3_title": "Supply Chain Solutions",
+    "feat3_desc": "End-to-end management ensuring complete visibility, efficiency, and reliability for your valuable cargo.",
+    "cert_title": "Internationally Certified",
+    "cert_desc": "We are proud to be a fully certified IATA Freight Forwarder, upholding the highest standards of safety and efficiency in global aviation cargo."
+  },
+  "about": {
+    "subtitle": "Who We Are",
+    "title": "Delivering the World",
+    "p1": "At El Safwa Cargo and Export, we have built our reputation on reliability, efficiency, and an unwavering commitment to our clients' success. Based in Alexandria, Egypt, we are strategically positioned at the crossroads of global trade.",
+    "p2": "Our expertise spans decades in the freight forwarding industry, allowing us to navigate the complexities of international logistics with ease. Whether by air, sea, or land, we ensure your cargo reaches its destination safely and on schedule.",
+    "p3": "We are proud of our IATA certification, which underscores our adherence to the highest industry standards for safety and operational excellence.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To provide world-class logistics and freight forwarding solutions that empower businesses to thrive globally. We aim to exceed expectations through innovation, dedication, and a customer-first approach."
+  },
+  "services": {
+    "subtitle": "What We Do",
+    "title": "Our Services",
+    "s1_title": "Air Freight",
+    "s1_desc": "Fast and reliable air cargo solutions for time-sensitive shipments. We offer global coverage and competitive rates.",
+    "s2_title": "Ocean Freight",
+    "s2_desc": "Cost-effective ocean transportation for large volumes. We handle both FCL (Full Container Load) and LCL (Less than Container Load).",
+    "s3_title": "Customs Brokerage",
+    "s3_desc": "Navigating complex international customs regulations smoothly to prevent delays and ensure compliance.",
+    "s4_title": "Warehousing",
+    "s4_desc": "Secure storage facilities equipped with modern technology to manage your inventory effectively.",
+    "s5_title": "Export Services",
+    "s5_desc": "Comprehensive support for exporting goods worldwide, including documentation and compliance.",
+    "s6_title": "Supply Chain Consulting",
+    "s6_desc": "Expert advice to optimize your supply chain, reduce costs, and improve overall operational efficiency."
+  },
+  "industries": {
+    "subtitle": "Sectors We Serve",
+    "title": "Industries",
+    "i1_title": "Pharmaceuticals",
+    "i1_desc": "Temperature-controlled logistics ensuring the integrity of critical medical supplies.",
+    "i2_title": "Automotive",
+    "i2_desc": "Just-in-time delivery for parts and complete vehicles worldwide.",
+    "i3_title": "Technology",
+    "i3_desc": "Secure and rapid transportation of high-value electronics and components.",
+    "i4_title": "Retail & FMCG",
+    "i4_desc": "Scalable solutions to meet seasonal demands and keep supply chains flowing.",
+    "i5_title": "Agriculture",
+    "i5_desc": "Specialized handling for perishable goods ensuring maximum freshness.",
+    "i6_title": "Manufacturing",
+    "i6_desc": "Heavy-lift and oversized cargo management for industrial equipment."
+  },
+  "contact": {
+    "subtitle": "Get in Touch",
+    "title": "Contact Us",
+    "hq": "Headquarters",
+    "addr1": "Alexandria Nozha International Airport",
+    "addr2": "Agents Compound Besi",
+    "addr3": "Alexandria, EG",
+    "addr4": "Egypt",
+    "details": "Contact Details",
+    "phone": "Phone:",
+    "email": "Email:",
+    "hours": "Business Hours",
+    "h_mon_fri": "Monday - Friday:",
+    "h_mon_fri_time": "9:00 AM - 6:00 PM",
+    "h_sat": "Saturday:",
+    "h_sat_time": "10:00 AM - 2:00 PM",
+    "h_sun": "Sunday:",
+    "h_sun_time": "Closed"
+  },
+  "footer": {
+    "desc": "Your trusted partner in global logistics and freight forwarding.",
+    "quick_links": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "iata": {
+    "code": "CargoLink Code"
+  }
+}

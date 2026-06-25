@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import IataBadge from './IataBadge';
 
 const FooterWrapper = styled.footer`
@@ -83,13 +84,16 @@ const BottomBar = styled.div`
 `;
 
 function Footer() {
+  const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
+
   return (
     <FooterWrapper>
       <FooterContainer>
         <BrandSection>
           <BrandName>El Safwa Cargo & Export</BrandName>
           <Description>
-            Premier freight forwarding and logistics services globally. Delivering excellence and reliability with every shipment.
+            {t('footer.desc')}
           </Description>
           <div>
             <IataBadge />
@@ -97,29 +101,29 @@ function Footer() {
         </BrandSection>
         
         <LinksSection>
-          <SectionTitle>Company</SectionTitle>
-          <FooterLink to="/about">About Us</FooterLink>
-          <FooterLink to="/services">Services</FooterLink>
-          <FooterLink to="/industries">Industries</FooterLink>
-          <FooterLink to="/contact">Contact</FooterLink>
+          <SectionTitle>{t('footer.quick_links')}</SectionTitle>
+          <FooterLink to="/about">{t('nav.about')}</FooterLink>
+          <FooterLink to="/services">{t('nav.services')}</FooterLink>
+          <FooterLink to="/industries">{t('nav.industries')}</FooterLink>
+          <FooterLink to="/contact">{t('nav.contact')}</FooterLink>
         </LinksSection>
 
         <LinksSection>
-          <SectionTitle>Contact Info</SectionTitle>
+          <SectionTitle>{t('footer.contact')}</SectionTitle>
           <Description>
             Alexandria Nozha International Airport<br />
             Agents Compound Besi<br />
             Alexandria, Egypt
           </Description>
           <Description>
+            info@elsafwacargo.com<br />
             Phone: +2034242810
           </Description>
         </LinksSection>
       </FooterContainer>
       
       <BottomBar>
-        <span>&copy; {new Date().getFullYear()} El Safwa Cargo and Export. All rights reserved.</span>
-        <span>Designed with modern web standards</span>
+        <span>&copy; {currentYear} El Safwa Cargo and Export. {t('footer.rights')}</span>
       </BottomBar>
     </FooterWrapper>
   );

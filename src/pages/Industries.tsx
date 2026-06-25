@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const PageContainer = styled.div`
   padding-top: 100px;
@@ -61,29 +62,40 @@ const IndustryCard = styled.div`
 `;
 
 function Industries() {
-  const industries = [
-    { title: "Pharmaceuticals", desc: "Temperature-controlled logistics ensuring the integrity of critical medical supplies." },
-    { title: "Automotive", desc: "Just-in-time delivery for parts and complete vehicles worldwide." },
-    { title: "Technology", desc: "Secure and rapid transportation of high-value electronics and components." },
-    { title: "Retail & FMCG", desc: "Scalable solutions to meet seasonal demands and keep supply chains flowing." },
-    { title: "Agriculture", desc: "Specialized handling for perishable goods ensuring maximum freshness." },
-    { title: "Manufacturing", desc: "Heavy-lift and oversized cargo management for industrial equipment." }
-  ];
+  const { t } = useTranslation();
 
   return (
     <PageContainer className="animate-fade-in">
       <HeaderSection>
-        <Subtitle>Sectors We Serve</Subtitle>
-        <Title>Industries</Title>
+        <Subtitle>{t('industries.subtitle')}</Subtitle>
+        <Title>{t('industries.title')}</Title>
       </HeaderSection>
 
       <ContentGrid>
-        {industries.map((ind, i) => (
-          <IndustryCard key={i}>
-            <h3>{ind.title}</h3>
-            <p>{ind.desc}</p>
-          </IndustryCard>
-        ))}
+        <IndustryCard>
+          <h3>{t('industries.i1_title')}</h3>
+          <p>{t('industries.i1_desc')}</p>
+        </IndustryCard>
+        <IndustryCard>
+          <h3>{t('industries.i2_title')}</h3>
+          <p>{t('industries.i2_desc')}</p>
+        </IndustryCard>
+        <IndustryCard>
+          <h3>{t('industries.i3_title')}</h3>
+          <p>{t('industries.i3_desc')}</p>
+        </IndustryCard>
+        <IndustryCard>
+          <h3>{t('industries.i4_title')}</h3>
+          <p>{t('industries.i4_desc')}</p>
+        </IndustryCard>
+        <IndustryCard>
+          <h3>{t('industries.i5_title')}</h3>
+          <p>{t('industries.i5_desc')}</p>
+        </IndustryCard>
+        <IndustryCard>
+          <h3>{t('industries.i6_title')}</h3>
+          <p>{t('industries.i6_desc')}</p>
+        </IndustryCard>
       </ContentGrid>
     </PageContainer>
   );

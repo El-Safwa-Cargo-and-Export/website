@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "industries": "Industries",
+    "contact": "Contactez-nous"
+  },
+  "home": {
+    "hero_subtitle": "Excellence Logistique Mondiale",
+    "hero_title": "Nous livrons <1>Au-delà</1> des attentes",
+    "hero_desc": "El Safwa Cargo and Export fournit des solutions logistiques fiables, efficaces et innovantes dans le monde entier. Un transport de fret sans faille garantissant que vos marchandises atteignent leur destination en toute sécurité et à temps.",
+    "quote_btn": "Demander un devis",
+    "feat1_title": "Fret Aérien et Maritime",
+    "feat1_desc": "Une logistique internationale complète combinant la rapidité de l'aérien avec l'échelle du transport maritime pour une livraison optimale.",
+    "feat2_title": "Réseau Mondial",
+    "feat2_desc": "Une portée étendue à travers les continents, soutenue par une expertise locale approfondie pour naviguer dans les réglementations internationales complexes.",
+    "feat3_title": "Solutions de Chaîne d'Approvisionnement",
+    "feat3_desc": "Une gestion de bout en bout garantissant une visibilité, une efficacité et une fiabilité totales pour votre cargaison de valeur.",
+    "cert_title": "Certifié à l'International",
+    "cert_desc": "Nous sommes fiers d'être un transitaire entièrement certifié IATA, respectant les normes de sécurité et d'efficacité les plus élevées dans le fret aérien mondial."
+  },
+  "about": {
+    "subtitle": "Qui Nous Sommes",
+    "title": "Livrer le Monde",
+    "p1": "Chez El Safwa Cargo and Export, nous avons bâti notre réputation sur la fiabilité, l'efficacité et un engagement inébranlable envers le succès de nos clients. Basés à Alexandrie, en Égypte, nous sommes stratégiquement positionnés au carrefour du commerce mondial.",
+    "p2": "Notre expertise s'étend sur des décennies dans le secteur de l'expédition de fret, ce qui nous permet de naviguer facilement dans les complexités de la logistique internationale. Que ce soit par air, mer ou terre, nous veillons à ce que votre cargaison atteigne sa destination en toute sécurité et dans les délais.",
+    "p3": "Nous sommes fiers de notre certification IATA, qui souligne notre adhésion aux normes industrielles les plus élevées en matière de sécurité et d'excellence opérationnelle.",
+    "mission_title": "Notre Mission",
+    "mission_desc": "Fournir des solutions logistiques et d'expédition de fret de classe mondiale qui permettent aux entreprises de prospérer à l'échelle mondiale. Nous visons à dépasser les attentes par l'innovation, le dévouement et une approche axée sur le client."
+  },
+  "services": {
+    "subtitle": "Ce que Nous Faisons",
+    "title": "Nos Services",
+    "s1_title": "Fret Aérien",
+    "s1_desc": "Des solutions de fret aérien rapides et fiables pour les expéditions urgentes. Nous offrons une couverture mondiale et des tarifs compétitifs.",
+    "s2_title": "Fret Maritime",
+    "s2_desc": "Un transport maritime rentable pour les gros volumes. Nous gérons à la fois les FCL (conteneur complet) et LCL (groupage).",
+    "s3_title": "Courtage en Douane",
+    "s3_desc": "Naviguer en douceur dans les réglementations douanières internationales complexes pour éviter les retards et garantir la conformité.",
+    "s4_title": "Entreposage",
+    "s4_desc": "Des installations de stockage sécurisées équipées de technologies modernes pour gérer efficacement votre inventaire.",
+    "s5_title": "Services d'Exportation",
+    "s5_desc": "Un soutien complet pour l'exportation de marchandises dans le monde entier, y compris la documentation et la conformité.",
+    "s6_title": "Conseil en Chaîne d'Approvisionnement",
+    "s6_desc": "Des conseils d'experts pour optimiser votre chaîne d'approvisionnement, réduire les coûts et améliorer l'efficacité opérationnelle globale."
+  },
+  "industries": {
+    "subtitle": "Secteurs que Nous Servons",
+    "title": "Industries",
+    "i1_title": "Produits Pharmaceutiques",
+    "i1_desc": "Une logistique à température contrôlée garantissant l'intégrité des fournitures médicales critiques.",
+    "i2_title": "Automobile",
+    "i2_desc": "Livraison juste-à-temps pour les pièces et les véhicules complets dans le monde entier.",
+    "i3_title": "Technologie",
+    "i3_desc": "Transport sécurisé et rapide de composants et d'électronique de grande valeur.",
+    "i4_title": "Vente au Détail et PGC",
+    "i4_desc": "Des solutions évolutives pour répondre aux demandes saisonnières et maintenir la fluidité des chaînes d'approvisionnement.",
+    "i5_title": "Agriculture",
+    "i5_desc": "Une manipulation spécialisée pour les denrées périssables garantissant une fraîcheur maximale.",
+    "i6_title": "Fabrication",
+    "i6_desc": "Gestion de fret lourd et hors gabarit pour les équipements industriels."
+  },
+  "contact": {
+    "subtitle": "Prenez Contact",
+    "title": "Contactez-nous",
+    "hq": "Siège Social",
+    "addr1": "Aéroport International d'Alexandrie Nozha",
+    "addr2": "Complexe des agents Besi",
+    "addr3": "Alexandrie, EG",
+    "addr4": "Égypte",
+    "details": "Coordonnées",
+    "phone": "Téléphone :",
+    "email": "E-mail :",
+    "hours": "Heures d'Ouverture",
+    "h_mon_fri": "Lundi - Vendredi :",
+    "h_mon_fri_time": "9h00 - 18h00",
+    "h_sat": "Samedi :",
+    "h_sat_time": "10h00 - 14h00",
+    "h_sun": "Dimanche :",
+    "h_sun_time": "Fermé"
+  },
+  "footer": {
+    "desc": "Votre partenaire de confiance dans la logistique mondiale et l'expédition de fret.",
+    "quick_links": "Liens Rapides",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  },
+  "iata": {
+    "code": "Code CargoLink"
+  }
+}

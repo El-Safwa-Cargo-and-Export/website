@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const BadgeContainer = styled.a`
   display: inline-flex;
@@ -53,7 +54,8 @@ const Code = styled.span`
   line-height: 1;
 `;
 
-const IataBadge: React.FC = () => {
+function IataBadge() {
+  const { t } = useTranslation();
   return (
     <BadgeContainer 
       href="https://www.iata.org/en/publications/directories/cargolink/directory/el-safwa-cargo-and-export/8723/" 
@@ -63,11 +65,11 @@ const IataBadge: React.FC = () => {
     >
       <IataLogoText>IATA</IataLogoText>
       <IataDetails>
-        <Title>CargoLink Code</Title>
+        <Title>{t('iata.code')}</Title>
         <Code>9047181</Code>
       </IataDetails>
     </BadgeContainer>
   );
-};
+}
 
 export default IataBadge;

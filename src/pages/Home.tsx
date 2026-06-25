@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation, Trans } from 'react-i18next';
 import IataBadge from '../components/IataBadge';
 
 const HomeContainer = styled.div`
@@ -126,42 +127,45 @@ const TrustTitle = styled.h2`
 
 function Home() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+  const TransComponent = Trans as any;
 
   return (
     <HomeContainer>
       <HeroSection className="animate-fade-in">
-        <HeroSubtitle>Global Logistics Excellence</HeroSubtitle>
+        <HeroSubtitle>{t('home.hero_subtitle')}</HeroSubtitle>
         <HeroTitle>
-          We Deliver <span>Beyond</span> Expectations
+          <TransComponent i18nKey="home.hero_title">
+            We Deliver <span>Beyond</span> Expectations
+          </TransComponent>
         </HeroTitle>
         <HeroDescription>
-          El Safwa Cargo and Export provides reliable, efficient, and innovative logistics solutions worldwide. 
-          Seamless freight forwarding ensuring your goods reach their destination safely and on time.
+          {t('home.hero_desc')}
         </HeroDescription>
         <ButtonGroup>
-          <PrimaryButton onClick={() => navigate('/contact')}>Request a Quote</PrimaryButton>
+          <PrimaryButton onClick={() => navigate('/contact')}>{t('home.quote_btn')}</PrimaryButton>
         </ButtonGroup>
       </HeroSection>
 
       <FeaturesSection>
         <FeatureCard>
-          <h3>Air & Sea Freight</h3>
-          <p>Comprehensive international logistics combining the speed of air with the scale of sea transport for optimal delivery.</p>
+          <h3>{t('home.feat1_title')}</h3>
+          <p>{t('home.feat1_desc')}</p>
         </FeatureCard>
         <FeatureCard>
-          <h3>Global Network</h3>
-          <p>Extensive reach across continents backed by deep local expertise to navigate complex international regulations.</p>
+          <h3>{t('home.feat2_title')}</h3>
+          <p>{t('home.feat2_desc')}</p>
         </FeatureCard>
         <FeatureCard>
-          <h3>Supply Chain Solutions</h3>
-          <p>End-to-end management ensuring complete visibility, efficiency, and reliability for your valuable cargo.</p>
+          <h3>{t('home.feat3_title')}</h3>
+          <p>{t('home.feat3_desc')}</p>
         </FeatureCard>
       </FeaturesSection>
 
       <TrustSection>
-        <TrustTitle>Internationally Certified</TrustTitle>
+        <TrustTitle>{t('home.cert_title')}</TrustTitle>
         <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-          We are proud to be a fully certified IATA Freight Forwarder, upholding the highest standards of safety and efficiency in global aviation cargo.
+          {t('home.cert_desc')}
         </p>
         <IataBadge />
       </TrustSection>

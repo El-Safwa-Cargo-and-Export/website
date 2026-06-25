@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const PageContainer = styled.div`
   padding-top: 100px;
@@ -62,37 +63,39 @@ const InfoBox = styled.div`
 `;
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <PageContainer className="animate-fade-in">
       <HeaderSection>
-        <Subtitle>Get in Touch</Subtitle>
-        <Title>Contact Us</Title>
+        <Subtitle>{t('contact.subtitle')}</Subtitle>
+        <Title>{t('contact.title')}</Title>
       </HeaderSection>
 
       <ContactGrid>
         <ContactInfo>
           <InfoBox>
-            <h3>Headquarters</h3>
+            <h3>{t('contact.hq')}</h3>
             <p>
-              Alexandria Nozha International Airport<br />
-              Agents Compound Besi<br />
-              Alexandria, EG<br />
-              Egypt
+              {t('contact.addr1')}<br />
+              {t('contact.addr2')}<br />
+              {t('contact.addr3')}<br />
+              {t('contact.addr4')}
             </p>
           </InfoBox>
           <InfoBox>
-            <h3>Contact Details</h3>
+            <h3>{t('contact.details')}</h3>
             <p>
-              Phone: +2034242810<br />
-              Email: info@elsafwacargo.com
+              {t('contact.phone')} +2034242810<br />
+              {t('contact.email')} info@elsafwacargo.com
             </p>
           </InfoBox>
           <InfoBox>
-            <h3>Business Hours</h3>
+            <h3>{t('contact.hours')}</h3>
             <p>
-              Monday - Friday: 9:00 AM - 6:00 PM<br />
-              Saturday: 10:00 AM - 2:00 PM<br />
-              Sunday: Closed
+              {t('contact.h_mon_fri')} {t('contact.h_mon_fri_time')}<br />
+              {t('contact.h_sat')} {t('contact.h_sat_time')}<br />
+              {t('contact.h_sun')} {t('contact.h_sun_time')}
             </p>
           </InfoBox>
         </ContactInfo>

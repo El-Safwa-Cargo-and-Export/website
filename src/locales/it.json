@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "industries": "Settori",
+    "contact": "Contattaci"
+  },
+  "home": {
+    "hero_subtitle": "Eccellenza Logistica Globale",
+    "hero_title": "Consegniamo <1>Oltre</1> le aspettative",
+    "hero_desc": "El Safwa Cargo and Export fornisce soluzioni logistiche affidabili, efficienti e innovative in tutto il mondo. Una spedizione senza interruzioni che assicura che le tue merci raggiungano la destinazione in sicurezza e in orario.",
+    "quote_btn": "Richiedi un preventivo",
+    "feat1_title": "Trasporto Aereo e Marittimo",
+    "feat1_desc": "Logistica internazionale completa che combina la velocità del trasporto aereo con la scala del trasporto marittimo per una consegna ottimale.",
+    "feat2_title": "Rete Globale",
+    "feat2_desc": "Ampia portata attraverso i continenti supportata da una profonda competenza locale per navigare in complesse normative internazionali.",
+    "feat3_title": "Soluzioni per la Catena di Approvvigionamento",
+    "feat3_desc": "Gestione end-to-end che garantisce completa visibilità, efficienza e affidabilità per il tuo carico di valore.",
+    "cert_title": "Certificato a Livello Internazionale",
+    "cert_desc": "Siamo orgogliosi di essere uno spedizioniere IATA completamente certificato, sostenendo i più alti standard di sicurezza ed efficienza nel carico aereo globale."
+  },
+  "about": {
+    "subtitle": "Chi Siamo",
+    "title": "Consegnare il Mondo",
+    "p1": "Presso El Safwa Cargo and Export, abbiamo costruito la nostra reputazione sull'affidabilità, sull'efficienza e su un impegno costante per il successo dei nostri clienti. Con sede ad Alessandria, Egitto, siamo strategicamente posizionati al crocevia del commercio globale.",
+    "p2": "La nostra esperienza si estende per decenni nel settore delle spedizioni, permettendoci di navigare con facilità nelle complessità della logistica internazionale. Che sia per via aerea, marittima o terrestre, ci assicuriamo che il tuo carico raggiunga la sua destinazione in sicurezza e nei tempi previsti.",
+    "p3": "Siamo orgogliosi della nostra certificazione IATA, che sottolinea la nostra adesione ai più alti standard del settore per la sicurezza e l'eccellenza operativa.",
+    "mission_title": "La Nostra Missione",
+    "mission_desc": "Fornire soluzioni logistiche e di spedizione merci di livello mondiale che consentono alle aziende di prosperare a livello globale. Miriamo a superare le aspettative attraverso l'innovazione, la dedizione e un approccio incentrato sul cliente."
+  },
+  "services": {
+    "subtitle": "Cosa Facciamo",
+    "title": "I Nostri Servizi",
+    "s1_title": "Trasporto Aereo",
+    "s1_desc": "Soluzioni di carico aereo veloci e affidabili per spedizioni urgenti. Offriamo copertura globale e tariffe competitive.",
+    "s2_title": "Trasporto Marittimo",
+    "s2_desc": "Trasporto marittimo conveniente per grandi volumi. Gestiamo sia FCL (Full Container Load) che LCL (Less than Container Load).",
+    "s3_title": "Intermediazione Doganale",
+    "s3_desc": "Navigare agevolmente nelle complesse normative doganali internazionali per prevenire ritardi e garantire la conformità.",
+    "s4_title": "Magazzinaggio",
+    "s4_desc": "Strutture di stoccaggio sicure dotate di tecnologie moderne per gestire efficacemente il tuo inventario.",
+    "s5_title": "Servizi di Esportazione",
+    "s5_desc": "Supporto completo per l'esportazione di merci in tutto il mondo, compresa la documentazione e la conformità.",
+    "s6_title": "Consulenza sulla Catena di Approvvigionamento",
+    "s6_desc": "Consulenza esperta per ottimizzare la catena di approvvigionamento, ridurre i costi e migliorare l'efficienza operativa complessiva."
+  },
+  "industries": {
+    "subtitle": "Settori che Serviamo",
+    "title": "Settori",
+    "i1_title": "Prodotti Farmaceutici",
+    "i1_desc": "Logistica a temperatura controllata che garantisce l'integrità delle forniture mediche critiche.",
+    "i2_title": "Automotive",
+    "i2_desc": "Consegna just-in-time per componenti e veicoli completi in tutto il mondo.",
+    "i3_title": "Tecnologia",
+    "i3_desc": "Trasporto sicuro e rapido di componenti e dispositivi elettronici di alto valore.",
+    "i4_title": "Vendita al Dettaglio e FMCG",
+    "i4_desc": "Soluzioni scalabili per soddisfare le richieste stagionali e mantenere fluide le catene di approvvigionamento.",
+    "i5_title": "Agricoltura",
+    "i5_desc": "Gestione specializzata per merci deperibili che garantisce la massima freschezza.",
+    "i6_title": "Produzione",
+    "i6_desc": "Gestione del carico eccezionale e pesante per attrezzature industriali."
+  },
+  "contact": {
+    "subtitle": "Mettiti in Contatto",
+    "title": "Contattaci",
+    "hq": "Sede Centrale",
+    "addr1": "Aeroporto Internazionale di Alessandria Nozha",
+    "addr2": "Complesso degli agenti Besi",
+    "addr3": "Alessandria, EG",
+    "addr4": "Egitto",
+    "details": "Dettagli di Contatto",
+    "phone": "Telefono:",
+    "email": "Email:",
+    "hours": "Orari di Lavoro",
+    "h_mon_fri": "Lunedì - Venerdì:",
+    "h_mon_fri_time": "9:00 - 18:00",
+    "h_sat": "Sabato:",
+    "h_sat_time": "10:00 - 14:00",
+    "h_sun": "Domenica:",
+    "h_sun_time": "Chiuso"
+  },
+  "footer": {
+    "desc": "Il tuo partner di fiducia nella logistica globale e nelle spedizioni merci.",
+    "quick_links": "Link Rapidi",
+    "contact": "Contatto",
+    "rights": "Tutti i diritti riservati."
+  },
+  "iata": {
+    "code": "Codice CargoLink"
+  }
+}

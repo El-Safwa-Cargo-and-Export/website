@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const NavHeader = styled.header<{ $scrolled: boolean }>`
@@ -107,7 +108,23 @@ const CtaButton = styled(Link)`
   }
 `;
 
+const LangSelect = styled.select`
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  
+  option {
+    background: var(--primary);
+    color: var(--text-main);
+  }
+`;
+
 function Navbar() {
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -122,6 +139,10 @@ function Navbar() {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const handleLangChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value);
+  };
+
   return (
     <NavHeader $scrolled={scrolled} className="animate-fade-in">
       <NavContainer>
@@ -130,11 +151,17 @@ function Navbar() {
           El Safwa
         </LogoContainer>
         <NavLinks>
-          <NavLink to="/" $active={isActive('/')}>Home</NavLink>
-          <NavLink to="/about" $active={isActive('/about')}>About</NavLink>
-          <NavLink to="/services" $active={isActive('/services')}>Services</NavLink>
-          <NavLink to="/industries" $active={isActive('/industries')}>Industries</NavLink>
-          <CtaButton to="/contact">Contact Us</CtaButton>
+          <NavLink to="/" $active={isActive('/')}>{t('nav.home')}</NavLink>
+          <NavLink to="/about" $active={isActive('/about')}>{t('nav.about')}</NavLink>
+          <NavLink to="/services" $active={isActive('/services')}>{t('nav.services')}</NavLink>
+          <NavLink to="/industries" $active={isActive('/industries')}>{t('nav.industries')}</NavLink>
+          <CtaButton to="/contact">{t('nav.contact')}</CtaButton>
+          <LangSelect onChange={handleLangChange} value={i18n.resolvedLanguage || 'en'}>
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+            <option value="fr">FR</option>
+            <option value="it">IT</option>
+          </LangSelect>
         </NavLinks>
       </NavContainer>
     </NavHeader>

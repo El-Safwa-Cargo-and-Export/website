@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const PageContainer = styled.div`
   padding-top: 100px;
@@ -61,47 +62,40 @@ const ServiceCard = styled.div`
 `;
 
 function Services() {
-  const services = [
-    {
-      title: "Air Freight",
-      description: "Fast and reliable air cargo solutions for time-sensitive shipments. We offer global coverage and competitive rates."
-    },
-    {
-      title: "Ocean Freight",
-      description: "Cost-effective ocean transportation for large volumes. We handle both FCL (Full Container Load) and LCL (Less than Container Load)."
-    },
-    {
-      title: "Customs Brokerage",
-      description: "Navigating complex international customs regulations smoothly to prevent delays and ensure compliance."
-    },
-    {
-      title: "Warehousing",
-      description: "Secure storage facilities equipped with modern technology to manage your inventory effectively."
-    },
-    {
-      title: "Export Services",
-      description: "Comprehensive support for exporting goods worldwide, including documentation and compliance."
-    },
-    {
-      title: "Supply Chain Consulting",
-      description: "Expert advice to optimize your supply chain, reduce costs, and improve overall operational efficiency."
-    }
-  ];
+  const { t } = useTranslation();
 
   return (
     <PageContainer className="animate-fade-in">
       <HeaderSection>
-        <Subtitle>What We Do</Subtitle>
-        <Title>Our Services</Title>
+        <Subtitle>{t('services.subtitle')}</Subtitle>
+        <Title>{t('services.title')}</Title>
       </HeaderSection>
-      
+
       <ServicesGrid>
-        {services.map((service, index) => (
-          <ServiceCard key={index}>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </ServiceCard>
-        ))}
+        <ServiceCard>
+          <h3>{t('services.s1_title')}</h3>
+          <p>{t('services.s1_desc')}</p>
+        </ServiceCard>
+        <ServiceCard>
+          <h3>{t('services.s2_title')}</h3>
+          <p>{t('services.s2_desc')}</p>
+        </ServiceCard>
+        <ServiceCard>
+          <h3>{t('services.s3_title')}</h3>
+          <p>{t('services.s3_desc')}</p>
+        </ServiceCard>
+        <ServiceCard>
+          <h3>{t('services.s4_title')}</h3>
+          <p>{t('services.s4_desc')}</p>
+        </ServiceCard>
+        <ServiceCard>
+          <h3>{t('services.s5_title')}</h3>
+          <p>{t('services.s5_desc')}</p>
+        </ServiceCard>
+        <ServiceCard>
+          <h3>{t('services.s6_title')}</h3>
+          <p>{t('services.s6_desc')}</p>
+        </ServiceCard>
       </ServicesGrid>
     </PageContainer>
   );
