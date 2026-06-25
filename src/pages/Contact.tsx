@@ -28,14 +28,12 @@ const Subtitle = styled.p`
 `;
 
 const ContactGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 4rem;
   padding: 0 2rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  max-width: 800px;
+  margin: 0 auto;
 `;
 
 const ContactInfo = styled.div`
@@ -63,71 +61,7 @@ const InfoBox = styled.div`
   }
 `;
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  background: var(--bg-surface);
-  padding: 3rem;
-  border-radius: var(--border-radius);
-  border: var(--glass-border);
-`;
-
-const Input = styled.input`
-  width: 100%;
-  padding: 1rem;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  color: var(--text-main);
-  font-family: var(--font-sans);
-  
-  &:focus {
-    outline: none;
-    border-color: var(--secondary);
-  }
-`;
-
-const TextArea = styled.textarea`
-  width: 100%;
-  padding: 1rem;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  color: var(--text-main);
-  font-family: var(--font-sans);
-  min-height: 150px;
-  resize: vertical;
-  
-  &:focus {
-    outline: none;
-    border-color: var(--secondary);
-  }
-`;
-
-const SubmitButton = styled.button`
-  background: var(--secondary);
-  color: var(--primary);
-  border: none;
-  padding: 1rem;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: var(--transition);
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2);
-  }
-`;
-
 function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you for contacting us! We will get back to you shortly.');
-  };
-
   return (
     <PageContainer className="animate-fade-in">
       <HeaderSection>
@@ -162,14 +96,6 @@ function Contact() {
             </p>
           </InfoBox>
         </ContactInfo>
-
-        <Form onSubmit={handleSubmit}>
-          <Input type="text" placeholder="Your Name" required />
-          <Input type="email" placeholder="Your Email" required />
-          <Input type="text" placeholder="Subject" required />
-          <TextArea placeholder="Your Message" required />
-          <SubmitButton type="submit">Send Message</SubmitButton>
-        </Form>
       </ContactGrid>
     </PageContainer>
   );
