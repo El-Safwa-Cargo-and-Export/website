@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NavHeader = styled.header<{ scrolled: boolean }>`
+const NavHeader = styled.header<{ $scrolled: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   transition: var(--transition);
-  padding: ${({ scrolled }) => (scrolled ? '1rem 0' : '1.5rem 0')};
-  background: ${({ scrolled }) => (scrolled ? 'rgba(10, 25, 47, 0.85)' : 'transparent')};
-  backdrop-filter: ${({ scrolled }) => (scrolled ? 'blur(10px)' : 'none')};
-  box-shadow: ${({ scrolled }) => (scrolled ? '0 10px 30px -10px rgba(2, 12, 27, 0.7)' : 'none')};
+  padding: ${({ $scrolled }) => ($scrolled ? '1rem 0' : '1.5rem 0')};
+  background: ${({ $scrolled }) => ($scrolled ? 'rgba(10, 25, 47, 0.85)' : 'transparent')};
+  backdrop-filter: ${({ $scrolled }) => ($scrolled ? 'blur(10px)' : 'none')};
+  box-shadow: ${({ $scrolled }) => ($scrolled ? '0 10px 30px -10px rgba(2, 12, 27, 0.7)' : 'none')};
 `;
 
 const NavContainer = styled.nav`
@@ -123,7 +123,7 @@ function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <NavHeader scrolled={scrolled} className="animate-fade-in">
+    <NavHeader $scrolled={scrolled} className="animate-fade-in">
       <NavContainer>
         <LogoContainer to="/">
           <LogoIcon>ES</LogoIcon>
