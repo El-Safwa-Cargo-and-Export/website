@@ -71,5 +71,8 @@
             "^react-router-dom$": "<rootDir>/node_modules/react-router-dom/dist/index.js",
             "^react-router$": "<rootDir>/node_modules/react-router/dist/index.js"
         }
+    },
+    "overrides": {
+        "typescript": "^5.0.0"
     }
 }
