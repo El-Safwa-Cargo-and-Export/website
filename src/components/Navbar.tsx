@@ -123,6 +123,14 @@ const LangSelect = styled.select`
   }
 `;
 
+const MobileLangWrapper = styled.div`
+  display: none;
+  
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
 function Navbar() {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
@@ -163,6 +171,14 @@ function Navbar() {
             <option value="it">IT</option>
           </LangSelect>
         </NavLinks>
+        <MobileLangWrapper>
+          <LangSelect onChange={handleLangChange} value={i18n.resolvedLanguage || 'en'}>
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+            <option value="fr">FR</option>
+            <option value="it">IT</option>
+          </LangSelect>
+        </MobileLangWrapper>
       </NavContainer>
     </NavHeader>
   );
