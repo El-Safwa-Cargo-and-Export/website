@@ -70,6 +70,8 @@
     "addr3": "Alexandrie, EG",
     "addr4": "Égypte",
     "details": "Coordonnées",
+    "cell": "Portable :",
+    "office": "Bureau :",
     "phone": "Téléphone :",
     "email": "E-mail :",
     "hours": "Heures d'Ouverture",

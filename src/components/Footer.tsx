@@ -117,7 +117,8 @@ function Footer() {
           </Description>
           <Description>
             info@elsafwacargo.com<br />
-            Phone: +2034242810
+            Cell: +201223173850<br />
+            Office: +2033813998
           </Description>
         </LinksSection>
       </FooterContainer>

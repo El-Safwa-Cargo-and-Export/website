@@ -86,7 +86,8 @@ function Contact() {
           <InfoBox>
             <h3>{t('contact.details')}</h3>
             <p>
-              {t('contact.phone')} +2034242810<br />
+              {t('contact.cell')} +201223173850<br />
+              {t('contact.office')} +2033813998<br />
               {t('contact.email')} info@elsafwacargo.com
             </p>
           </InfoBox>

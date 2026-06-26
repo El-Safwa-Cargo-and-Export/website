@@ -70,6 +70,8 @@
     "addr3": "Alessandria, EG",
     "addr4": "Egitto",
     "details": "Dettagli di Contatto",
+    "cell": "Cellulare:",
+    "office": "Ufficio:",
     "phone": "Telefono:",
     "email": "Email:",
     "hours": "Orari di Lavoro",
